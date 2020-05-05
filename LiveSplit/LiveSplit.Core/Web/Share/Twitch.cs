@@ -164,7 +164,7 @@ the first time that sharing to Twitch is used.";
 
         public TwitchChat ConnectToChat(string channel = null)
         {
-            channel = (channel ?? ChannelId).ToLower();
+            channel = (channel ?? ChannelName).ToLower();
             if (ConnectedChats.ContainsKey(channel))
                 throw new ArgumentException("Already connected to channel");
             var chat = new TwitchChat(AccessToken, channel);

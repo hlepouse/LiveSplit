@@ -35,7 +35,7 @@ namespace LiveSplit.Web.Share
             Client.Registered += Client_Registered;
             Channel = channel;
 
-            Client.Connect("irc.twitch.tv", 6667,
+            Client.Connect("irc.chat.twitch.tv", 6667,
                 new IrcUserRegistrationInfo()
                 {
                     NickName = twitch.ChannelName,
